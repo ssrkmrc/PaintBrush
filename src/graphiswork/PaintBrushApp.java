@@ -87,7 +87,7 @@ PaintBrushApp() {
         theBox.add(StrokeBut);
         theBox.add(FillBut);
          theBox.add(clear);
-        transLabel = new JLabel("Transparent: 1 ");
+        transLabel = new JLabel("Transparency: 1 ");
         tranSlider = new JSlider(1, 99, 99);
 
         ListenForSlider lSlider = new ListenForSlider();
