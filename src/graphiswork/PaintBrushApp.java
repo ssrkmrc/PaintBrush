@@ -1,3 +1,10 @@
+/*Required updates:
+ * 1. fix the clear operation(clicking on the new menu)
+ * 2.save the   workout in panel as image.
+ * 3.change the look of mouse pointer after clicking brash button to brash and so on.
+ * 4. Use defaultToolkit
+ * 5. Fix unnecessary complexities
+ */
 package graphiswork;
 
 import java.awt.*;
@@ -29,10 +36,11 @@ float transparentVal=1.0f;
 PaintBrushApp() {
         
     JFrame frame=new JFrame();
-   
+    
     final Container content = frame.getContentPane();
     
-    setTitle("Paint Application");
+    setIconImage(new ImageIcon("./src/images/defaultIcon.png").getImage());
+    setTitle("PaintBrush");
         setSize(1800,750);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
      
@@ -63,7 +71,7 @@ PaintBrushApp() {
          Box theBox = Box.createVerticalBox();
 
 
-        BrashBut = addImageToButtons("./src/images/Brash.png", 1);
+        BrashBut = addImageToButtons("./src/images/brushIcon.png", 1);
         EllipseBut = addImageToButtons("./src/images/Ellipse.png", 3);
         RectangleBut = addImageToButtons("./src/images/Rectangle.png", 4);
         LineBut = addImageToButtons("./src/images/Line.png", 2);
